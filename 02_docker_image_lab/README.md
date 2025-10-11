@@ -19,23 +19,24 @@
 
 ## Вывод docker history
 ```
-diana@LAPTOP-VFHN5IBT:/mnt/c/me/programs/OS_labs/OS-labs/02_docker_image_lab$ docker history "$LOGIN/image-lab:$PREFIX"
+diana@LAPTOP-VFHN5IBT:/mnt/c/me/programs/OS_labs/OS-labs/02_docker_image_lab$ docker history dianaponomareva/image-lab:2
+85f8025
 IMAGE          CREATED        CREATED BY                                      SIZE      COMMENT
-2c1b44e5bdcb   6 hours ago    CMD ["python" "app.py"]                         0B        buildkit.dockerfile.v0
-<missing>      6 hours ago    HEALTHCHECK &{["CMD-SHELL" "curl -f http://l…   0B        buildkit.dockerfile.v0
-<missing>      6 hours ago    ENV ROCKET_SIZE=Medium                          0B        buildkit.dockerfile.v0
-<missing>      6 hours ago    USER appuser                                    0B        buildkit.dockerfile.v0
-<missing>      6 hours ago    COPY --chown=appuser:appuser app/ ./ # build…   12.3kB    buildkit.dockerfile.v0
-<missing>      6 hours ago    COPY /usr/local/bin/ /usr/local/bin/ # build…   24.6kB    buildkit.dockerfile.v0
-<missing>      6 hours ago    COPY /usr/local/lib/python3.12/site-packages…   11.9MB    buildkit.dockerfile.v0
-<missing>      6 hours ago    WORKDIR /app                                    4.1kB     buildkit.dockerfile.v0
-<missing>      6 hours ago    RUN |2 LAB_LOGIN=dianaponomareva LAB_TOKEN=2…   8.19kB    buildkit.dockerfile.v0
-<missing>      16 hours ago   RUN |2 LAB_LOGIN=dianaponomareva LAB_TOKEN=2…   41kB      buildkit.dockerfile.v0
-<missing>      16 hours ago   LABEL org.lab.token=285f8025407781bf6fb07abc…   0B        buildkit.dockerfile.v0
-<missing>      16 hours ago   LABEL org.lab.login=dianaponomareva             0B        buildkit.dockerfile.v0
-<missing>      16 hours ago   ARG LAB_TOKEN=285f8025407781bf6fb07abcacc15e…   0B        buildkit.dockerfile.v0
-<missing>      16 hours ago   ARG LAB_LOGIN=dianaponomareva                   0B        buildkit.dockerfile.v0
-<missing>      16 hours ago   RUN /bin/sh -c apk add --no-cache curl # bui…   5.31MB    buildkit.dockerfile.v0
+dd3ce9b4abe0   24 hours ago   CMD ["python" "app.py"]                         0B        buildkit.dockerfile.v0
+<missing>      24 hours ago   HEALTHCHECK &{["CMD-SHELL" "curl -f http://l…   0B        buildkit.dockerfile.v0
+<missing>      24 hours ago   ENV ROCKET_SIZE=Medium                          0B        buildkit.dockerfile.v0
+<missing>      24 hours ago   USER appuser                                    0B        buildkit.dockerfile.v0
+<missing>      24 hours ago   COPY --chown=appuser:appuser app/ ./ # build…   12.3kB    buildkit.dockerfile.v0
+<missing>      24 hours ago   COPY /usr/local/bin/ /usr/local/bin/ # build…   24.6kB    buildkit.dockerfile.v0
+<missing>      24 hours ago   COPY /usr/local/lib/python3.12/site-packages…   11.9MB    buildkit.dockerfile.v0
+<missing>      24 hours ago   WORKDIR /app                                    4.1kB     buildkit.dockerfile.v0
+<missing>      24 hours ago   RUN |2 LAB_LOGIN=dianaponomareva LAB_TOKEN=2…   8.19kB    buildkit.dockerfile.v0
+<missing>      34 hours ago   RUN |2 LAB_LOGIN=dianaponomareva LAB_TOKEN=2…   41kB      buildkit.dockerfile.v0
+<missing>      34 hours ago   LABEL org.lab.token=285f8025407781bf6fb07abc…   0B        buildkit.dockerfile.v0
+<missing>      34 hours ago   LABEL org.lab.login=dianaponomareva             0B        buildkit.dockerfile.v0
+<missing>      34 hours ago   ARG LAB_TOKEN=285f8025407781bf6fb07abcacc15e…   0B        buildkit.dockerfile.v0
+<missing>      34 hours ago   ARG LAB_LOGIN=dianaponomareva                   0B        buildkit.dockerfile.v0
+<missing>      34 hours ago   RUN /bin/sh -c apk add --no-cache curl # bui…   5.31MB    buildkit.dockerfile.v0
 <missing>      2 months ago   CMD ["python3"]                                 0B        buildkit.dockerfile.v0
 <missing>      2 months ago   RUN /bin/sh -c set -eux;  for src in idle3 p…   16.4kB    buildkit.dockerfile.v0
 <missing>      2 months ago   RUN /bin/sh -c set -eux;   apk add --no-cach…   44MB      buildkit.dockerfile.v0
