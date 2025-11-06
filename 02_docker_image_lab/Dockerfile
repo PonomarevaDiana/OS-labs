@@ -26,6 +26,9 @@ COPY --from=builder /usr/local/bin/ /usr/local/bin/
 
 COPY --chown=appuser:appuser app/ ./
 
+RUN mkdir -p /tmp /var/tmp /run && \
+    chown appuser:appuser /tmp /var/tmp /run && \
+    chmod 777 /tmp /var/tmp /run
 USER appuser
 
 ENV ROCKET_SIZE=Medium
