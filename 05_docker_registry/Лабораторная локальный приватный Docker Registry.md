@@ -19,7 +19,7 @@
 
 Контейнер запущен:
 
-![[Pasted image 20260207190914.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207190914.png)
 
 ---
 
@@ -27,7 +27,7 @@
 
 registry отвечает и репозиториев пока нет:
 
-![[Pasted image 20260207191149.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207191149.png)
 
 ---
 
@@ -38,7 +38,7 @@ registry отвечает и репозиториев пока нет:
 * `index.html`
 * `Dockerfile`: 
 
-![[Pasted image 20260207210133.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210133.png)
 
 ---
 
@@ -46,11 +46,11 @@ registry отвечает и репозиториев пока нет:
 
 Сборка образа с тегом `web-demo-dianaponomareva:1.0`:
 
-![[Pasted image 20260207200841.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207200841.png)
 
 Образ появился
 
-![[Pasted image 20260207200944.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207200944.png)
 
 ---
 
@@ -60,7 +60,7 @@ registry отвечает и репозиториев пока нет:
 
 Теперь есть два имени/тега у одного и того же образа:
 
-![[Pasted image 20260207201727.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207201727.png)
 
 ---
 
@@ -74,7 +74,7 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 
  Вывода`push`:
  
-![[Pasted image 20260207202315.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207202315.png)
 
 ---
 
@@ -82,7 +82,7 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 
 Список репозиториев:
 
-![[Pasted image 20260207202518.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207202518.png)
 
 Появление:
 ```json
@@ -91,7 +91,7 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 
 Список тегов:
 
-![[Pasted image 20260207202703.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207202703.png)
 
 Появление
 ```json
@@ -102,12 +102,12 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 
 ## 8) Проверка pull
 
-1. Удалите только тег `localhost:5000/...` (локальный `web-demo-<логин>:1.0` не удаляйте).
-  ![[Pasted image 20260207203407.png]]
+1. Удалила:
+![](вложенные%20файлы/Pasted%20image%2020260207203407.png)
 
-2. Выполните `docker pull localhost:5000/web-demo-<логин>:1.0`.
+2. Выполнила `docker pull localhost:5000/web-demo-dianaponomareva:1.0`.
 
-![[Pasted image 20260207203456.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207203456.png)
 
 ---
 
@@ -116,9 +116,9 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 Запустила контейнер из образа `localhost:5000/web-demo-dianaponomareva:1.0` с пробросом порта 8080:80.
 Открыла в браузере `http://localhost:8080` и проверила, что отображается HTML.
 
-![[Pasted image 20260207210350.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210350.png)
 
-![[Pasted image 20260207210445.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210445.png)
 
 ---
 ## 10) Самостоятельная часть
@@ -127,23 +127,25 @@ docker push localhost:5000/web-demo-dianaponomareva:1.0
 
 * Изменила `index.html`, поменяла строку `Version 2.0`
 
-![[Pasted image 20260207210646.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210646.png)
 
 * Собрала образ с тегом `2.0`
 
-![[Pasted image 20260207210635.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210635.png)
 
-![[Pasted image 20260207210820.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210820.png)
 
 * Запушила `2.0` в registry
-![[Pasted image 20260207210841.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210841.png)
 * Проверила через API, что у репозитория есть теги `1.0` и `2.0`
-![[Pasted image 20260207210955.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207210955.png)
 ### 10.2 Второй запуск на другом порту
 
 Запустила второй контейнер из версии `2.0` на другом порту (например 8081) и проверила:
 
 * `http://localhost:8080` показывает версию 1.0
 * `http://localhost:8081` показывает версию 2.0
- ![[Pasted image 20260207211119.png]]
- ![[Pasted image 20260207211207.png]]![[Pasted image 20260207211230.png]]![[Pasted image 20260207211252.png]]
+![](вложенные%20файлы/Pasted%20image%2020260207211119.png)
+![](вложенные%20файлы/Pasted%20image%2020260207211207.png)
+![](вложенные%20файлы/Pasted%20image%2020260207211230.png)
+![](вложенные%20файлы/Pasted%20image%2020260207211252.png)
